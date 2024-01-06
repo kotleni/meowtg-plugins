@@ -4,7 +4,7 @@ from telethon.tl.functions.messages import SendReactionRequest
 import subprocess
 import re
 import platform
-
+#  Plugin by awlik 01.2024
 class CommandLineExecutor:
 
     def execute(self, command):
@@ -25,7 +25,7 @@ class Neofetch:
 
 
 class NeofetchPlugin(PluginBase):
-    """The module that displays neofetch. Plugin by awlik 01.2024"""
+    """The module that displays neofetch."""
 
     enabled = True
 
