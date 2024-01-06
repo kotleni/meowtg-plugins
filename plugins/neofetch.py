@@ -6,7 +6,7 @@ import re
 import platform
 #  Plugin by awlik 01.2024
 class CommandLineExecutor:
-
+    """ Stolen from cmd.py :) """
     def execute(self, command):
         return subprocess.run(command, shell=True, capture_output=True)
 
