@@ -4,6 +4,7 @@ from plugin_base import PluginBase
 from telethon import TelegramClient, events, types
 from telethon.tl.functions.messages import SendReactionRequest
 from pytube import YouTube
+from result_codes import *
 
 # U need to env/bin/pip install pytube for using this module
 # by awlik 07.01.2024
@@ -48,6 +49,5 @@ class Help(PluginBase):
                 message = event.message
                 video = Video(message.text.split()[1], parse=False)
             await self.api.client.send_file(chat, video.file_name)
-            await self.api.client.delete_messages(chat, [event.message])
             video.delete()
 
