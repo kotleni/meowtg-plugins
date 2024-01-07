@@ -28,7 +28,7 @@ class CompilerC(PluginBase):
                 message = await self.api.client.get_messages(chat.id, ids=event.reply_to.reply_to_msg_id)
 
             with open('temp.c', 'w') as file:
-                file.write(message.text.replace('.c', ''))
+                file.write(message.text.replace('.c', '').replace('```', '')
 
             output = self.executor.execute('gcc temp.c -o temp.o').stderr.decode('utf-8')
             output += str(self.executor.execute('./temp.o').stdout.decode('utf-8'))
