@@ -50,4 +50,5 @@ class Help(PluginBase):
                 video = Video(message.text.split()[1], parse=False)
             await self.api.client.send_file(chat, video.file_name)
             video.delete()
+            return COMMAND_OK_MESSAGE_REMOVE
 
