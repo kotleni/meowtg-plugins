@@ -40,13 +40,12 @@ class Help(PluginBase):
     async def on_command(self, event, args) -> str:
         if args[0] == "yvideo" or args[0] == 'youtube':
             chat = await event.get_chat()
-
+            message = event.message
             if event.reply_to:
-                message = await self.api.client.get_messages(chat.id, ids=event.reply_to.reply_to_msg_id)
-                video = Video(message.text)
+                reply_message = await self.api.client.get_messages(chat.id, ids=event.reply_to.reply_to_msg_id)
+                video = Video(reply_message.text)
 
             else:
-                message = event.message
                 video = Video(message.text.split()[1], parse=False)
             await self.api.client.send_file(chat, video.file_name)
             video.delete()
