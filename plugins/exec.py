@@ -2,6 +2,7 @@ from plugin_base import PluginBase
 from telethon import TelegramClient, events, types
 from telethon.tl.functions.messages import SendReactionRequest
 
+# by awlik 08.01.2024
 class Exec(PluginBase):
     """Execute python script <code>"""
     
