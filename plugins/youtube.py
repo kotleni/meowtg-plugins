@@ -24,9 +24,6 @@ class Video:
         return True
 
 
-
-
-
 class Help(PluginBase):
     """Youtube video downloader plugin. Try .yvideo<link> or .yvideo <reply on link>. U need to .cmd env/bin/pip install pytube for using this module"""
     enabled = True
