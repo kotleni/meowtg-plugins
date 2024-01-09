@@ -26,10 +26,12 @@ class AdvancedUserInfo(PluginBase):
           if event.reply_to:
             message = await self.api.client.get_messages(chat.id, ids=event.reply_to.reply_to_msg_id)
             user = UserInfo(message, get_user=True)
-          elif len(args) == 1:
-            user = UserInfo(event)
-
           elif len(args) > 1:
             user = UserInfo(event, get_user=True, username=args[1])
+          else:
+            message = await self.api.client.get_messages(chat.id, ids=event.from_id)
+            user = UserInfo(message)
+
+
            
         return f'Fist name: {user.first_name}\nLast name: {user.last_name}\nID: {user.id}\n'
