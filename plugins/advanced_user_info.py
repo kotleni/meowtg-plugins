@@ -4,7 +4,7 @@ from telethon.tl.functions.messages import SendReactionRequest
 import subprocess
 #by awlik 09.01.2024
 class UserInfo:
-  def __init__(who, get_user=None, username=False):
+  def __init__(self, who, get_user=None, username=False):
     if get_user:
       who = who.client(functions.help.GetUserInfoRequest(user_id=username))
   
