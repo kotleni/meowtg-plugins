@@ -17,7 +17,7 @@ class UserInfo:
 class AdvancedUserInfo(PluginBase):
     """Andvanced User info by .userinfo command"""
     enabled = True
-
+    chat = event.get_chat()
     def __init__(self, api) -> None:
         super().__init__(api)
         
