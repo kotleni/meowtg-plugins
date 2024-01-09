@@ -17,12 +17,13 @@ class UserInfo:
 class AdvancedUserInfo(PluginBase):
     """Andvanced User info by .userinfo command"""
     enabled = True
-    chat = event.get_chat()
+    
     def __init__(self, api) -> None:
         super().__init__(api)
         
     async def on_command(self, event, args) -> str:
         if args[0] == "userinfo":
+          chat = event.get_chat()
           if event.reply_to:
             message = await self.api.client.get_messages(chat.id, ids=event.reply_to.reply_to_msg_id)
             user = UserInfo(message, get_user=True)
