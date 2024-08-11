@@ -59,6 +59,8 @@ class Loli(PluginBase):
     async def on_command(self, event, args) -> str:
         if args[0] == "loli":
             chat = await event.get_chat()
+            message = event.message
+            await self.api.client.edit_message(chat, message, f'.loli **(processing)**')
             path = download()
             await self.api.client.send_file(chat, path, force_document=False)
             return COMMAND_OK_MESSAGE_REMOVE
