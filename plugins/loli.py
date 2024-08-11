@@ -21,7 +21,7 @@ def get_random_image():
 
         # Extract the image URL
         image_data = data['data'][0]
-        image_url = image_data['urls']['original']
+        image_url = image_data['urls']['regular']
 
         return image_url
     except Exception as e:
