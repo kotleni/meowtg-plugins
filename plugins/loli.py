@@ -3,6 +3,7 @@ from telethon import TelegramClient, events, types
 from telethon.tl.functions.messages import SendReactionRequest
 import requests
 import os
+from result_codes import *
 
 api_url = "https://api.lolicon.app/setu/v2?size=original&size=regular"
 
@@ -57,6 +58,7 @@ class Loli(PluginBase):
         
     async def on_command(self, event, args) -> str:
         if args[0] == "loli":
+            chat = await event.get_chat()
             path = download()
             await self.api.client.send_file(chat, path, force_document=False)
             return COMMAND_OK_MESSAGE_REMOVE
