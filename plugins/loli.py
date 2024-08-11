@@ -22,13 +22,13 @@ def get_random_image():
         # Extract the image URL
         image_data = data['data'][0]
         image_url = image_data['urls']['original']
-        
+
         return image_url
     except Exception as e:
         print(f"An error occurred while fetching data from the API: {e}")
 
 class Loli(PluginBase):
-    """User info by .user command"""
+    """Get loli imageby .loli command"""
     enabled = True
 
     def __init__(self, api) -> None:
