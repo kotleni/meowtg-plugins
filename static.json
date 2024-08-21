@@ -6,7 +6,7 @@
     { "name" : "save_logs", "description" : "Enable logging to files", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
     { "name" : "halt", "description" : "Halt bot on .halt command", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
     { "name" : "help", "description" : "Get plugins descriptions list by .plugins", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "help", "description" : "Get cat demotivator with http status code by .httpcat <code>", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.0" },
+    { "name" : "httpcat", "description" : "Get cat demotivator with http status code by .httpcat <code>", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.0" },
     { "name" : "loli", "description" : "Get random cute anime girl picture", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
     { "name" : "media_timer_save.py", "description" : "Send all incoming media with timer to saved messages", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
     { "name" : "neofetch", "description" : "Get neofetch as text (should be installed neofetch to path)", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.0" }
