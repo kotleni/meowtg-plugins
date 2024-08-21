@@ -9,5 +9,6 @@
     { "name" : "httpcat", "description" : "Get cat demotivator with http status code by .httpcat <code>", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.1" },
     { "name" : "loli", "description" : "Get random cute anime girl picture", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
     { "name" : "media_timer_save.py", "description" : "Send all incoming media with timer to saved messages", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
-    { "name" : "neofetch", "description" : "Get neofetch as text (should be installed neofetch to path)", "author" : "awlik", "versionCode" : 2, "versionName" : "1.0.1" }
+    { "name" : "neofetch", "description" : "Get neofetch as text (should be installed neofetch to path)", "author" : "awlik", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "backupme", "description" : "Backup meowtg folder (warning: with tg.session file!)", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" }
 ]
