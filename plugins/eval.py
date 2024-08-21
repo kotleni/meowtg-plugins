@@ -18,4 +18,4 @@ class Eval(PluginBase):
                 result = eval(code)
             except Exception as e:
                 result = e
-            return result
+            return str(result)

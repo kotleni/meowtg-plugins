@@ -2,7 +2,7 @@
     { "name" : "assets_grab", "description" : "Automatically download all media from chats to assets/ folder", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
     { "name" : "cat_pic", "description" : "Send random cat pic on .cat command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
     { "name" : "cmd", "description" : "Execute shell commands on .cmd command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
-    { "name" : "eval", "description" : "Evaluate python code on .eval command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "eval", "description" : "Evaluate python code on .eval command", "author" : "kotleni", "versionCode" : 3, "versionName" : "1.0.2" },
     { "name" : "save_logs", "description" : "Enable logging to files", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
     { "name" : "halt", "description" : "Halt bot on .halt command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
     { "name" : "help", "description" : "Get plugins descriptions list by .plugins", "author" : "kotleni", "versionCode" : 3, "versionName" : "1.0.2" },
