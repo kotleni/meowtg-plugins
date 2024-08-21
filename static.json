@@ -1,13 +1,13 @@
 [
-    { "name" : "assets_grab", "description" : "Automatically download all media from chats to assets/ folder", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "cat_pic", "description" : "Send random cat pic on .cat command", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "cmd", "description" : "Execute shell commands on .cmd command", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "eval", "description" : "Evaluate python code on .eval command", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "save_logs", "description" : "Enable logging to files", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "halt", "description" : "Halt bot on .halt command", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "help", "description" : "Get plugins descriptions list by .plugins", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "httpcat", "description" : "Get cat demotivator with http status code by .httpcat <code>", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "loli", "description" : "Get random cute anime girl picture", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "media_timer_save.py", "description" : "Send all incoming media with timer to saved messages", "author" : "kotleni", "versionCode" : 1, "versionName" : "1.0.0" },
-    { "name" : "neofetch", "description" : "Get neofetch as text (should be installed neofetch to path)", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.0" }
+    { "name" : "assets_grab", "description" : "Automatically download all media from chats to assets/ folder", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "cat_pic", "description" : "Send random cat pic on .cat command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "cmd", "description" : "Execute shell commands on .cmd command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "eval", "description" : "Evaluate python code on .eval command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "save_logs", "description" : "Enable logging to files", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "halt", "description" : "Halt bot on .halt command", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "help", "description" : "Get plugins descriptions list by .plugins", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "httpcat", "description" : "Get cat demotivator with http status code by .httpcat <code>", "author" : "awlik", "versionCode" : 1, "versionName" : "1.0.1" },
+    { "name" : "loli", "description" : "Get random cute anime girl picture", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "media_timer_save.py", "description" : "Send all incoming media with timer to saved messages", "author" : "kotleni", "versionCode" : 2, "versionName" : "1.0.1" },
+    { "name" : "neofetch", "description" : "Get neofetch as text (should be installed neofetch to path)", "author" : "awlik", "versionCode" : 2, "versionName" : "1.0.1" }
 ]
