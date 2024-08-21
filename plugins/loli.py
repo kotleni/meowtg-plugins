@@ -28,9 +28,6 @@ def get_random_image():
         print(f"An error occurred while fetching data from the API: {e}")
 
 class Loli(PluginBase):
-    """Get loli imageby .loli command"""
-    enabled = True
-
     def __init__(self, api) -> None:
         super().__init__(api)
         

@@ -6,8 +6,6 @@ import requests
 import os
 import random
 
-# by awlik 13.07.2024
-
 class DownloadCode:
     def __init__(self, code):
         url = f'https://http.cat/images/{code}.jpg'
@@ -22,16 +20,6 @@ class DownloadCode:
 
 
 class HttpCat(PluginBase):
-    """
-    http.cat is a website that provides HTTP status codes illustrated with pictures of cats.
-    Each status code is accompanied by a humorous or expressive image of a cat, making it a fun way
-    to learn about or reference HTTP status codes.
-
-    Usage .httpcat <code>
-    """
-
-    enabled = True
-
     def __init__(self, api) -> None:
         super().__init__(api)
 

@@ -4,9 +4,8 @@ from telethon.tl.functions.messages import SendReactionRequest
 import subprocess
 import re
 import platform
-#  Plugin by awlik 01.2024
+
 class CommandLineExecutor:
-    """ Stolen from cmd.py :) """
     def execute(self, command):
         return subprocess.run(command, shell=True, capture_output=True)
 
@@ -25,10 +24,6 @@ class Neofetch:
 
 
 class NeofetchPlugin(PluginBase):
-    """The module that displays neofetch."""
-
-    enabled = True
-
     executor = CommandLineExecutor()
 
     def __init__(self, api) -> None:

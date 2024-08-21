@@ -4,10 +4,6 @@ from telethon.tl.functions.messages import SendReactionRequest
 import os
 
 class AssetsGrab(PluginBase):
-    """Automatically download all media from chats"""
-    
-    enabled = False
-
     assets_path = 'assets/'
 
     SIZE_LIMIT_KB = 32 * 1024
