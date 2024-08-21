@@ -20,8 +20,8 @@ class DownloadCode:
 
 
 class HttpCat(PluginBase):
-    def __init__(self, api) -> None:
-        super().__init__(api)
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
 
     async def load(self):
         pass

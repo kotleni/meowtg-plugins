@@ -26,8 +26,8 @@ class Neofetch:
 class NeofetchPlugin(PluginBase):
     executor = CommandLineExecutor()
 
-    def __init__(self, api) -> None:
-        super().__init__(api)
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
 
     async def on_command(self, event, args) -> Exception | str:
         if args[0] == "neofetch":

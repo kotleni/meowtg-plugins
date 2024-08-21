@@ -8,8 +8,8 @@ class AssetsGrab(PluginBase):
 
     SIZE_LIMIT_KB = 32 * 1024
 
-    def __init__(self, api) -> None:
-        super().__init__(api)
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
     
     async def load(self):
         if not os.path.isdir(self.assets_path):

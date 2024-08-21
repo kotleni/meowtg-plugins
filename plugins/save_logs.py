@@ -7,6 +7,9 @@ from const import *
 class SaveLogs(PluginBase):
     logs_folder = "logs"
 
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
+
     async def load(self):
         formatter = logging.Formatter(LOGGER_FORMATTER)
 

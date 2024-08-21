@@ -28,8 +28,8 @@ def get_random_image():
         print(f"An error occurred while fetching data from the API: {e}")
 
 class Loli(PluginBase):
-    def __init__(self, api) -> None:
-        super().__init__(api)
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
         
     async def on_command(self, event, args) -> str:
         if args[0] == "loli":

@@ -10,8 +10,8 @@ class CommandLineExecutor:
 class Cmd(PluginBase):
     executor = CommandLineExecutor()
 
-    def __init__(self, api) -> None:
-        super().__init__(api)
+    def __init__(self, header, api) -> None:
+        super().__init__(header, api)
         
     async def on_command(self, event, args) -> str:
         if args[0] == "cmd" or args[0] == "shell" or args[0] == "exec":
