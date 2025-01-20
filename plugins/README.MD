@@ -1,1 +1,0 @@
-This is the directory where all plugins will be located, and if you want to create your own plugin, upload it here.

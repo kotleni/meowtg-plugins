@@ -1,4 +1,4 @@
 # Meowtg Plugin Repository
 
-Welcome to the official repository for Meowtg plugins! Here, you can contribute your own modules and easily install them using the `.pkg` command.
-
+Welcome to the official repository for MeowTG plugins!
+<i>Here, you can contribute your own plugins and easily install them using the `.plug` command.</i>

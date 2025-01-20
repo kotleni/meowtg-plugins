@@ -1,0 +1,11 @@
+[
+    {
+        "name" : "id",
+        "description" : "Get the id of the user.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+    }
+]
