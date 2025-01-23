@@ -7,5 +7,14 @@
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
         "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+    },
+     {
+        "name" : "cat-testing",
+        "description" : "Read files in telegram.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
     }
 ]
