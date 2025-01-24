@@ -1,28 +1,27 @@
 import BasePlugin from "../meowtg/plugin/basePlugin";
-import PluginsAPI from "../meowtg/plugin/pluginsApi";
 import {Api} from "telegram";
 import Message = Api.Message;
 import InputDocumentFileLocation = Api.InputDocumentFileLocation;
+import {showResult} from "../meowtg/utils";
 
-export default class CatPlugin implements BasePlugin {
+export default class CatPlugin extends BasePlugin {
     name: string = "cat";
     description: string = "Read text files.";
-    api: PluginsAPI;
 
-    async onLoad() {
-        await this.api.commandsProcessor
+    override async onLoad() {
+        await this.commandsProcessor
             .register(this.name, this.description, (args: string[], message: Message) => this.onIdCommand(args, message));
     }
 
-    async onUnload() {
-        this.api.commandsProcessor.unregister(this.name);
+    override async onUnload() {
+        this.commandsProcessor.unregister(this.name);
     }
 
     private async onIdCommand(args: string[], message: Message) {
         if(message.replyTo) { // If reply
             const replyMessage = await message.getReplyMessage();
             const doc = replyMessage.document;
-            const content = await this.api.telegramClient.downloadFile(new InputDocumentFileLocation({
+            const content = await this.telegramClient.downloadFile(new InputDocumentFileLocation({
                 id: doc.id,
                 accessHash: doc.accessHash,
                 fileReference: doc.fileReference,
@@ -30,12 +29,12 @@ export default class CatPlugin implements BasePlugin {
             }));
             const contentString = content.toString();
             if(contentString.length < 4096 - 512) {
-                await this.api.showResult(message, `<code>${contentString}</code>`);
+                await showResult(message, `<code>${contentString}</code>`);
             } else {
-                await this.api.showResult(message, `Error: File is too large.`);
+                await showResult(message, `Error: File is too large.`);
             }
         } else { // Self
-            await this.api.showResult(message, `Error: Reply to any text file.`);
+            await showResult(message, `Error: Reply to any text file.`);
         }
     }
 }

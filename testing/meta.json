@@ -6,7 +6,7 @@
         "dependencies" : [],
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     },
     {
         "name" : "cat",
@@ -15,7 +15,7 @@
         "dependencies" : [],
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     },
     {
         "name" : "inlineban",
@@ -24,7 +24,7 @@
         "dependencies" : [],
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     },
     {
         "name" : "tmpmsg",
@@ -33,7 +33,7 @@
         "dependencies" : [],
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     },
     {
         "name" : "eval",
@@ -42,6 +42,6 @@
         "dependencies" : [],
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     }
 ]
