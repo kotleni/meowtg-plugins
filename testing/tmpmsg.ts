@@ -1,5 +1,5 @@
-import BasePlugin from "../meowtg/plugins/base_plugin";
-import PluginsAPI from "../meowtg/plugins/plugins_api";
+import BasePlugin from "../meowtg/plugin/basePlugin";
+import PluginsAPI from "../meowtg/plugin/pluginsApi";
 import {Api} from "telegram";
 import Message = Api.Message;
 import {sleep} from "telegram/Helpers";
@@ -12,6 +12,10 @@ export default class TmpMsgPlugin implements BasePlugin {
     async onLoad() {
         await this.api.commandsProcessor
             .register(this.name, this.description, (args: string[], message: Message) => this.onCommand(args, message));
+    }
+
+    async onUnload() {
+        this.api.commandsProcessor.unregister(this.name);
     }
 
     private async onCommand(args: string[], message: Message) {

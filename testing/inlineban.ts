@@ -1,5 +1,5 @@
-import BasePlugin from "../meowtg/plugins/base_plugin";
-import PluginsAPI from "../meowtg/plugins/plugins_api";
+import BasePlugin from "../meowtg/plugin/basePlugin";
+import PluginsAPI from "../meowtg/plugin/pluginsApi";
 import {Api} from "telegram";
 import Message = Api.Message;
 import Config from "../meowtg/config";
@@ -27,7 +27,14 @@ export default class InlineBanPlugin implements BasePlugin {
 
         await this.api.commandsProcessor.register("iban", this.description, (args: string[], message: Message) => this.onBanCommand(args, message));
         await this.api.commandsProcessor.register("ipardon", this.description, (args: string[], message: Message) => this.onPardonCommand(args, message));
-        this.api.pluginsProcessor.registerMessagesListener((message: Message) => this.onMessage(message));
+        this.api.pluginsProcessor.registerMessagesListener(this.name, (message: Message) => this.onMessage(message));
+    }
+
+    async onUnload() {
+        this.api.commandsProcessor.unregister("iban");
+        this.api.commandsProcessor.unregister("ipardon");
+
+        this.api.pluginsProcessor.unregisterMessagesListener(this.name);
     }
 
     private async onMessage(message: Message): Promise<void> {
