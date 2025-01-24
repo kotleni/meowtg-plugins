@@ -8,9 +8,27 @@
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
         "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
     },
-     {
-        "name" : "cat-testing",
+    {
+        "name" : "cat",
         "description" : "Read files in telegram.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+    },
+    {
+        "name" : "inlineban",
+        "description" : "Custom ban system without real ban.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  20, "name" :  "2.0.0" }
+    },
+    {
+        "name" : "tmpmsg",
+        "description" : "Send temporary messages.",
         "permissions" : [],
         "dependencies" : [],
         "authors" : ["kotleni"],
