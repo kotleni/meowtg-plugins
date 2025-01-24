@@ -1,7 +1,7 @@
 [
     {
-        "name" : "id-testing",
-        "description" : "Get the id of the user.",
+        "name" : "stickerless",
+        "description" : "Block all stickers what sends user.",
         "permissions" : [],
         "dependencies" : [],
         "authors" : ["kotleni"],
