@@ -1,50 +1,5 @@
 [
     {
-        "name" : "stickerless",
-        "description" : "Block all stickers what sends user.",
-        "permissions" : [],
-        "dependencies" : [],
-        "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
-    },
-    {
-        "name" : "cat",
-        "description" : "Read files in telegram.",
-        "permissions" : [],
-        "dependencies" : [],
-        "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
-    },
-    {
-        "name" : "inlineban",
-        "description" : "Custom ban system without real ban.",
-        "permissions" : [],
-        "dependencies" : [],
-        "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
-    },
-    {
-        "name" : "tmpmsg",
-        "description" : "Send temporary messages.",
-        "permissions" : [],
-        "dependencies" : [],
-        "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
-    },
-    {
-        "name" : "eval",
-        "description" : "Execute js code from telegram.",
-        "permissions" : [],
-        "dependencies" : [],
-        "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
-        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
-    },
-    {
         "name" : "bash",
         "description" : "Execute linux bash commands.",
         "permissions" : [],
