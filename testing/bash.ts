@@ -2,7 +2,7 @@ import BasePlugin from "../meowtg/plugin/basePlugin";
 import { Api } from "telegram";
 import Message = Api.Message;
 import { showResult } from "../meowtg/utils";
-import { exec } from "child_process"; // Import exec
+import { exec } from "child_process";
 
 export default class BashPlugin extends BasePlugin {
     name: string = "bash";
@@ -17,24 +17,31 @@ export default class BashPlugin extends BasePlugin {
         this.commandsProcessor.unregister(this.name);
     }
 
-    private async onBashCommand(args: string[], message: Message) {
-        const command = args[1]
+    private cleanAnsi(text: string): string {
+        return text.replace(/\x1B\[[0-?]*[ -/]*[@-~]/g, '');
+    }
 
-        if (!command || command === `.${this.name}`) {
-            await showResult(message, "Please provide a command to execute.");
+    private async onBashCommand(args: string[], message: Message) {
+        const command = args[1];
+
+        if (!command) {
+            await showResult(message, "Please provide a command to execute. Usage: .bash <your_command>");
             return;
         }
 
         exec(command, async (error, stdout, stderr) => {
             if (error) {
-                await showResult(message, `Error: ${error.message}`);
+                const cleanedErrorMessage = this.cleanAnsi(error.message);
+                await showResult(message, `Error: ${cleanedErrorMessage}`);
                 return;
             }
             if (stderr) {
-                await showResult(message, `Stderr: ${stderr}`);
+                const cleanedStderr = this.cleanAnsi(stderr);
+                await showResult(message, `Stderr: \n${cleanedStderr}`);
                 return;
             }
-            await showResult(message, stdout ? `Stdout: \n${stdout}` : "Command executed, no output.");
+            const cleanedStdout = this.cleanAnsi(stdout);
+            await showResult(message, cleanedStdout ? `Stdout: \n${cleanedStdout}` : "Command executed, no output.");
         });
     }
 }

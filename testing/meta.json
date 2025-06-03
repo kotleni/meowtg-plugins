@@ -50,7 +50,7 @@
         "permissions" : [],
         "dependencies" : [],
         "authors" : ["kotleni"],
-        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "pluginVersion" : { "code" :  1, "name" :  "1.0.1" },
         "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     }
 ]
