@@ -43,5 +43,14 @@
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
         "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
+    },
+    {
+        "name" : "bash",
+        "description" : "Execute linux bash commands.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     }
 ]
