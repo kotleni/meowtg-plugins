@@ -52,5 +52,14 @@
         "authors" : ["kotleni"],
         "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
         "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
+    },
+    {
+        "name" : "savetimermedia",
+        "description" : "Save images and videos from media with timer to saved messages.",
+        "permissions" : [],
+        "dependencies" : [],
+        "authors" : ["kotleni"],
+        "pluginVersion" : { "code" :  0, "name" :  "1.0.0" },
+        "clientVersion" : { "code" :  21, "name" :  "2.0.1" }
     }
 ]
